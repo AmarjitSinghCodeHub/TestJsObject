@@ -88,3 +88,6 @@ console.log(filterObjList);
 const genderObjList =objList.filter(o=>o.gender === "male");
 
 console.log(genderObjList);
+
+const getEmpData =objList.filter(o=>o.employeeName==="EMP3");
+console.log(getEmpData);
