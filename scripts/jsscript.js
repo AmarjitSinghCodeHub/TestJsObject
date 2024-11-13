@@ -26,3 +26,65 @@ const myObj={
 const pin =myObj.Address.pin;
 const city=myObj.Address.city;
 console.log(`value of getData ${pin} and ${city}`);
+
+
+
+//  map function ----- demonstration
+
+const mapData=[2,3,5,6,7,8];
+const mapNewData =mapData.map(d=>d*20);
+
+console.log(`map function \n`);
+console.log(mapData);
+console.log(mapNewData);
+
+// const mapDataTwo=mapData.map(d=>{
+//    return d>5?d*100:d
+// });
+
+const mapDataTwo=mapData.map(d=> d > 4 ? d*100 : d);
+
+
+//  filter function ------- demonstration
+
+const objList=[
+    {
+        employeeId : 1001,
+        employeeName:"EMP1",
+        gender:"male"
+
+    },
+    {
+        employeeId : 1002,
+        employeeName:"EMP2",
+        gender:"Female"
+
+    },
+    {
+        employeeId : 1003,
+        employeeName:"EMP3",
+        gender:"male"
+
+    },
+    {
+    employeeId : 1004,
+        employeeName:"EMP4",
+        gender:"Female"
+
+    },
+    {
+        employeeId : 1005,
+        employeeName:"EMP5",
+        gender:"Female"
+
+    }
+]
+
+
+const filterObjList =objList.filter(o=>o.employeeId > 1004);
+
+console.log(filterObjList);
+
+const genderObjList =objList.filter(o=>o.gender === "male");
+
+console.log(genderObjList);
